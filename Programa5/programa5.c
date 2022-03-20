@@ -7,15 +7,15 @@ int main () {
     printf("Digite as notas do primeiro e segundo bimestre \n");
     scanf("%f %f", &nota1,&nota2);
 
-    media = ((nota1 * 2) + (nota2  * 3)) / 2;
+    media = ((nota1 * 2) + (nota2  * 3)) / 5;
 
-    // printf("A media das notas eh: %f \n", media);
+    printf("A media das notas eh: %f \n", media);
 
-    if(media <= 70){
+    if(media >= 70){
         printf("aprovado");
     } else if (media < 50){
         printf("reprovado");
-    }  else if (media == 50 || media == 69){
+    }  else if (media == 50 && media == 69){
         printf("recuperacao");
     }
 
